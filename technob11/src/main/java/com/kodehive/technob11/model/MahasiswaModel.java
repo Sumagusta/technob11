@@ -5,6 +5,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
+@Data
 @Entity
 @Table(name = "T_MAHASISWA")
 public class MahasiswaModel {
@@ -15,6 +18,6 @@ public class MahasiswaModel {
 	private String name;
 	private String gender;
 	private int spp;
-	private String alamat;
+	private String alamat;	
 	
 }
